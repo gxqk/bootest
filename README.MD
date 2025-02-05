@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/your-username/Universal-Bootstrapper?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/your-username/Universal-Bootstrapper?style=for-the-badge)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![XAML](https://img.shields.io/badge/XAML-0C54C2?style=for-the-badge&logo=xaml&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 <br>
@@ -150,7 +150,12 @@ the most recent release!
    - File Format: Single file
 5. Click "Publish"
 
-The standalone .exe will be created in the publish folder!
+Your standalone .exe will be created at:
+```
+src\bin\Release\net7.0-windows\win-x64\publish\bootstrapper.exe
+```
+
+💡 Tip: This is a single file that contains everything needed to run on any Windows 64-bit PC!
 
 ### Project Configuration
 
