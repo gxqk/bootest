@@ -1,120 +1,220 @@
 # Universal Bootstrapper 🚀
 
-Un bootstrapper moderne et élégant pour télécharger et installer automatiquement la dernière version de votre application depuis GitHub Releases.
+<div align="center">
 
-![Preview](preview.png)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/your-username/Universal-Bootstrapper?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/your-username/Universal-Bootstrapper?style=for-the-badge)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-## ✨ Caractéristiques
+<br>
 
-- 🎨 Interface moderne avec animations fluides
-- 📥 Téléchargement automatique de la dernière release depuis GitHub
-- 🔄 Barre de progression avec animations
-- 🌈 Effets visuels et transitions élégantes
-- 🎯 Support des fichiers .zip et .rar
-- 📂 Option de chemin d'installation personnalisé
-- 🚀 Option de lancement automatique après installation
-- ⏰ Affichage de l'heure en temps réel
-- 🌙 Design sombre moderne
+<img src="preview.png" alt="Universal Bootstrapper Preview" width="600"/>
 
-## 🛠️ Prérequis
+### 🌟 A modern and elegant bootstrapper for automatically downloading and installing the latest version of your application from GitHub Releases.
 
-- Windows 7 ou supérieur
+[Getting Started](#-getting-started) •
+[Features](#-features) •
+[Configuration](#%EF%B8%8F-configuration) •
+[Documentation](#-documentation) •
+[Support](#-support)
+
+</div>
+
+---
+
+## ✨ Features
+
+<table>
+<tr>
+<td>
+
+### 🎨 Design
+- Modern interface with fluid animations
+- Real-time clock display
+- Dark mode design
+- Elegant visual effects
+- Smooth transitions
+
+</td>
+<td>
+
+### 🛠️ Technical
+- GitHub Releases integration
+- ZIP/RAR support
+- Custom installation path
+- Auto-launch option
+- Progress tracking
+
+</td>
+</tr>
+</table>
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+<table>
+<tr>
+<td>
+
+- Windows 7 or higher
 - [.NET 6.0 Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)
-- Visual Studio 2022 (pour le développement)
+- Visual Studio 2022 (for development)
 
-## 📥 Installation
+</td>
+<td>
 
-1. Clonez le repository :
 ```bash
-git clone https://github.com/votre-username/Universal-Bootstrapper.git
+# Clone the repository
+git clone https://github.com/your-username/Universal-Bootstrapper.git
+
+# Open in Visual Studio
+# Restore NuGet packages
+# Build the project
 ```
 
-2. Ouvrez la solution dans Visual Studio 2022
-3. Restaurez les packages NuGet
-4. Compilez le projet
+</td>
+</tr>
+</table>
 
 ## ⚙️ Configuration
 
-Modifiez le fichier `Config.cs` pour configurer votre bootstrapper :
+Edit `Config.cs` to set up your bootstrapper:
 
 ```csharp
 public static class Config
 {
-    public static string GithubUsername { get; } = "votre-username";
-    public static string GithubRepository { get; } = "votre-repo";
-    public static string ExecutableName { get; } = "votre-executable.exe";
+    // Your GitHub username
+    public static string GithubUsername { get; } = "your-username";
+    
+    // Your repository name
+    public static string GithubRepository { get; } = "your-repo";
+    
+    // The executable to launch after installation
+    public static string ExecutableName { get; } = "your-app.exe";
 }
 ```
 
-## 🚀 Utilisation
+## 🎨 Customization
 
-1. Créez une release sur GitHub avec votre fichier .zip ou .rar
-2. Le bootstrapper :
-   - Téléchargera automatiquement la dernière version
-   - Extraira les fichiers
-   - Lancera l'application si l'option est cochée
+<table>
+<tr>
+<td>
 
-## 🎨 Personnalisation
+### 🎡 Animations
+- Fade-in startup
+- Hover effects
+- Progress bar animations
+- Smooth transitions
 
-### Couleurs
-- Couleur principale : `#00A2FF`
-- Couleur secondaire : `#FF00FF`
-- Arrière-plan : `#1E1E1E` à `#252830`
+</td>
+<td>
 
-### Animations
-- Animations de fade-in au démarrage
-- Effets de survol sur le titre et les boutons
-- Animation de la barre de progression
-- Transitions fluides pour tous les éléments
-
-## 📦 Structure du Projet
-
+### 🎯 Colors
+```css
+Primary: #00A2FF
+Secondary: #FF00FF
+Background: #1E1E1E → #252830
 ```
+
+</td>
+</tr>
+</table>
+
+## 🔧 Technical Features
+
+<div align="center">
+
+![Async](https://img.shields.io/badge/Async-Operations-blue?style=for-the-badge)
+![XAML](https://img.shields.io/badge/XAML-Animations-purple?style=for-the-badge)
+![Error Handling](https://img.shields.io/badge/Error-Handling-red?style=for-the-badge)
+![Drag & Drop](https://img.shields.io/badge/Drag%20&%20Drop-Support-green?style=for-the-badge)
+
+</div>
+
+- ⚡ Asynchronous downloads with progress tracking
+- 📦 ZIP and RAR archive support
+- 🛡️ Comprehensive error handling
+- 🎯 Responsive UI with modern animations
+- 🔄 Automatic updates from GitHub releases
+
+## 📂 Project Structure
+
+```plaintext
 Universal-Bootstrapper/
-├── Resources/
+├── 🎨 Resources/
 │   └── icon.ico
-├── Bootstrapper-ui.xaml
-├── Bootstrapper-ui.xaml.cs
-├── Config.cs
-├── App.xaml
-└── App.xaml.cs
+├── 📱 Bootstrapper-ui.xaml
+├── ⚙️ Bootstrapper-ui.xaml.cs
+├── 🛠️ Config.cs
+├── 🚀 App.xaml
+└── ⚡ App.xaml.cs
 ```
 
-## 🔧 Fonctionnalités Techniques
+## 🤝 Contributing
 
-- Gestion asynchrone des téléchargements
-- Support des archives .zip et .rar
-- Gestion des erreurs et des timeouts
-- Interface utilisateur responsive
-- Animations XAML optimisées
-- Support du drag & drop pour la fenêtre
+<table>
+<tr>
+<td>
+<a href="https://github.com/your-username/Universal-Bootstrapper/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=your-username/Universal-Bootstrapper" />
+</a>
+</td>
+<td>
 
-## 🤝 Contribution
+1. 🍴 Fork the project
+2. 🌿 Create your feature branch
+3. 💫 Make your changes
+4. 📤 Push to the branch
+5. 🎯 Open a Pull Request
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push sur la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+</td>
+</tr>
+</table>
 
 ## 📝 License
 
-Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
+<div align="center">
 
-## 🙏 Crédits
+Released under the [MIT](LICENSE) license
+<br>
+Copyright © 2024 Your-Name
 
-- Développé par [Votre Nom]
-- Interface inspirée des designs modernes Windows
-- Icônes et animations personnalisées
+</div>
 
-## 📞 Support
+## 🌟 Credits
 
-Pour toute question ou problème :
-1. Ouvrez une issue sur GitHub
-2. Consultez la [documentation](wiki-link)
-3. Contactez-nous via [email/discord]
+<div align="center">
+
+Created with ❤️ by [Your-Name]
+<br>
+Inspired by modern Windows designs
+<br>
+Custom icons and animations
+
+</div>
+
+## 💫 Support
+
+<div align="center">
+
+[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-username)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-server)
+[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/your-username/Universal-Bootstrapper/issues)
+
+</div>
 
 ---
-⭐ N'oubliez pas de mettre une étoile si vous aimez ce projet ! 
+
+<div align="center">
+
+### ⭐ Star this repo if you like it!
+
+<br>
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=your-username%2FUniversal-Bootstrapper&label=VISITORS&countColor=%2337d67a)
+![Stars](https://img.shields.io/github/stars/your-username/Universal-Bootstrapper?style=social)
+
+</div> 
