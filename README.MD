@@ -217,4 +217,154 @@ Custom icons and animations
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=your-username%2FUniversal-Bootstrapper&label=VISITORS&countColor=%2337d67a)
 ![Stars](https://img.shields.io/github/stars/your-username/Universal-Bootstrapper?style=social)
 
-</div> 
+</div>
+
+## 📦 Publishing Your Application
+
+<table>
+<tr>
+<td>
+
+### 🔄 How It Works
+The bootstrapper automatically:
+1. Fetches the latest release
+2. Downloads ZIP/RAR files
+3. Extracts to chosen location
+4. Launches your application
+
+</td>
+<td>
+
+### 📋 Requirements
+- GitHub account
+- Public repository
+- ZIP/RAR releases
+- Proper version tagging
+
+</td>
+</tr>
+</table>
+
+### Step-by-Step Guide
+
+#### 1️⃣ Create Your GitHub Repository
+
+```bash
+# Initialize your local repository
+git init
+git add .
+git commit -m "Initial commit"
+
+# Create repository on GitHub
+# Then push your code
+git remote add origin https://github.com/your-username/your-repo.git
+git push -u origin main
+```
+
+#### 2️⃣ Prepare Your Application
+
+1. Organize your files:
+```plaintext
+your-app/
+├── your-app.exe
+├── data/
+└── other-files/
+```
+
+2. Create archive:
+   - Compress into `.zip` or `.rar`
+   - Include all necessary files
+   - Name format: `your-app-v1.0.0.zip`
+
+#### 3️⃣ Create a GitHub Release
+
+<table>
+<tr>
+<td>
+
+1. Go to your repository
+2. Click "Releases"
+3. Click "Create a new release"
+4. Choose a tag (e.g., `v1.0.0`)
+5. Add release title
+6. Add description
+7. Upload your ZIP/RAR file
+8. Publish release
+
+</td>
+<td>
+
+Example release structure:
+```plaintext
+Title: v1.0.0 - Initial Release
+Tag: v1.0.0
+Files: your-app-v1.0.0.zip
+Description:
+- Feature 1
+- Feature 2
+- Bug fixes
+```
+
+</td>
+</tr>
+</table>
+
+#### 4️⃣ Configure Bootstrapper
+
+1. Fork this repository
+2. Update `Config.cs`:
+```csharp
+public static class Config
+{
+    public static string GithubUsername { get; } = "your-username";    // Your GitHub username
+    public static string GithubRepository { get; } = "your-repo";     // Your repository name
+    public static string ExecutableName { get; } = "your-app.exe";    // Your app's executable
+}
+```
+
+#### 5️⃣ Build & Distribute
+
+1. Build the bootstrapper
+2. Share the bootstrapper executable
+3. Users will always get the latest version!
+
+### 🔄 Update Process
+
+1. Prepare new version
+2. Create new release on GitHub
+3. Upload new ZIP/RAR
+4. Publish release
+5. Done! Bootstrapper will automatically download the latest version
+
+### 📝 Release Tips
+
+- Use semantic versioning (`v1.0.0`, `v1.0.1`, etc.)
+- Include changelogs in release descriptions
+- Test ZIP/RAR files before publishing
+- Keep old releases for version history
+- Use clear release titles and descriptions
+
+### ⚠️ Common Issues
+
+<table>
+<tr>
+<td>
+
+#### Problems
+- Release not found
+- Download fails
+- Extraction error
+- Launch fails
+
+</td>
+<td>
+
+#### Solutions
+- Check repository visibility
+- Verify ZIP/RAR format
+- Check file permissions
+- Validate executable path
+
+</td>
+</tr>
+</table> 
