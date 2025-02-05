@@ -12,13 +12,12 @@
 
 <img src="preview.png" alt="Universal Bootstrapper Preview" width="600"/>
 
-### 🌟 A modern and elegant bootstrapper for automatically downloading and installing the latest version of your application from GitHub Releases.
+### 🌟 A modern and elegant bootstrapper that automatically downloads and installs the latest version of your application from GitHub Releases.
 
 [Getting Started](#-getting-started) •
 [Features](#-features) •
 [Configuration](#%EF%B8%8F-configuration) •
-[Documentation](#-documentation) •
-[Support](#-support)
+[Documentation](#-documentation)
 
 </div>
 
@@ -41,11 +40,11 @@
 <td>
 
 ### 🛠️ Technical
+- Single file executable (.exe)
+- No dependencies required
 - GitHub Releases integration
 - ZIP/RAR support
 - Custom installation path
-- Auto-launch option
-- Progress tracking
 
 </td>
 </tr>
@@ -59,9 +58,14 @@
 <tr>
 <td>
 
-- Windows 7 or higher
-- [.NET 6.0 Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)
-- Visual Studio 2022 (for development)
+For Development:
+- Windows 10/11
+- Visual Studio 2022
+- .NET 7 SDK
+
+For Users:
+- Windows 64-bit
+- No other requirements!
 
 </td>
 <td>
@@ -70,8 +74,7 @@
 # Clone the repository
 git clone https://github.com/your-username/Universal-Bootstrapper.git
 
-# Open in Visual Studio
-# Restore NuGet packages
+# Open in Visual Studio 2022
 # Build the project
 ```
 
@@ -79,173 +82,7 @@ git clone https://github.com/your-username/Universal-Bootstrapper.git
 </tr>
 </table>
 
-## ⚙️ Configuration
-
-Edit `Config.cs` to set up your bootstrapper:
-
-```csharp
-public static class Config
-{
-    // Your GitHub username
-    public static string GithubUsername { get; } = "your-username";
-    
-    // Your repository name
-    public static string GithubRepository { get; } = "your-repo";
-    
-    // The executable to launch after installation
-    public static string ExecutableName { get; } = "your-app.exe";
-}
-```
-
-## 🎨 Customization
-
-<table>
-<tr>
-<td>
-
-### 🎡 Animations
-- Fade-in startup
-- Hover effects
-- Progress bar animations
-- Smooth transitions
-
-</td>
-<td>
-
-### 🎯 Colors
-```css
-Primary: #00A2FF
-Secondary: #FF00FF
-Background: #1E1E1E → #252830
-```
-
-</td>
-</tr>
-</table>
-
-## 🔧 Technical Features
-
-<div align="center">
-
-![Async](https://img.shields.io/badge/Async-Operations-blue?style=for-the-badge)
-![XAML](https://img.shields.io/badge/XAML-Animations-purple?style=for-the-badge)
-![Error Handling](https://img.shields.io/badge/Error-Handling-red?style=for-the-badge)
-![Drag & Drop](https://img.shields.io/badge/Drag%20&%20Drop-Support-green?style=for-the-badge)
-
-</div>
-
-- ⚡ Asynchronous downloads with progress tracking
-- 📦 ZIP and RAR archive support
-- 🛡️ Comprehensive error handling
-- 🎯 Responsive UI with modern animations
-- 🔄 Automatic updates from GitHub releases
-
-## 📂 Project Structure
-
-```plaintext
-Universal-Bootstrapper/
-├── 🎨 Resources/
-│   └── icon.ico
-├── 📱 Bootstrapper-ui.xaml
-├── ⚙️ Bootstrapper-ui.xaml.cs
-├── 🛠️ Config.cs
-├── 🚀 App.xaml
-└── ⚡ App.xaml.cs
-```
-
-## 🤝 Contributing
-
-<table>
-<tr>
-<td>
-<a href="https://github.com/your-username/Universal-Bootstrapper/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=your-username/Universal-Bootstrapper" />
-</a>
-</td>
-<td>
-
-1. 🍴 Fork the project
-2. 🌿 Create your feature branch
-3. 💫 Make your changes
-4. 📤 Push to the branch
-5. 🎯 Open a Pull Request
-
-</td>
-</tr>
-</table>
-
-## 💫 Support
-
-<div align="center">
-
-[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-username)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-server)
-[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/your-username/Universal-Bootstrapper/issues)
-
-</div>
-
----
-
-## 📝 License
-
-<div align="center">
-
-Released under the [MIT](LICENSE) license
-<br>
-Copyright © 2024 Your-Name
-
-</div>
-
-## 🌟 Credits
-
-<div align="center">
-
-Created with ❤️ by [Your-Name]
-<br>
-Inspired by modern Windows designs
-<br>
-Custom icons and animations
-
-</div>
-
----
-
-<div align="center">
-
-### ⭐ Star this repo if you like it!
-
-<br>
-
-![Visitors](https://api.visitorbadge.io/api/visitors?path=your-username%2FUniversal-Bootstrapper&label=VISITORS&countColor=%2337d67a)
-![Stars](https://img.shields.io/github/stars/your-username/Universal-Bootstrapper?style=social)
-
-</div>
-
 ## 📦 Publishing Your Application
-
-<table>
-<tr>
-<td>
-
-### 🔄 How It Works
-The bootstrapper automatically:
-1. Fetches the latest release
-2. Downloads ZIP/RAR files
-3. Extracts to chosen location
-4. Launches your application
-
-</td>
-<td>
-
-### 📋 Requirements
-- GitHub account
-- Public repository
-- ZIP/RAR releases
-- Proper version tagging
-
-</td>
-</tr>
-</table>
 
 ### Step-by-Step Guide
 
@@ -263,22 +100,7 @@ git remote add origin https://github.com/your-username/your-repo.git
 git push -u origin main
 ```
 
-#### 2️⃣ Prepare Your Application
-
-1. Organize your files:
-```plaintext
-your-app/
-├── your-app.exe
-├── data/
-└── other-files/
-```
-
-2. Create archive:
-   - Compress into `.zip` or `.rar`
-   - Include all necessary files
-   - Name format: `your-app-v1.0.0.zip`
-
-#### 3️⃣ Create a GitHub Release
+#### 2️⃣ Create a GitHub Release
 
 <table>
 <tr>
@@ -287,34 +109,66 @@ your-app/
 1. Go to your repository
 2. Click "Releases"
 3. Click "Create a new release"
-4. Choose a tag (e.g., `v1.0.0`)
-5. Add release title
-6. Add description
-7. Upload your ZIP/RAR file
-8. Publish release
+4. Add a title (e.g., "Latest Update")
+5. Upload your ZIP/RAR file
+6. Click "Publish release"
+
+That's it! The bootstrapper will automatically download the latest release.
 
 </td>
 <td>
 
 Example release structure:
 ```plaintext
-Title: v1.0.0 - Initial Release
-Tag: v1.0.0
-Files: your-app-v1.0.0.zip
-Description:
-- Feature 1
-- Feature 2
+Title: Latest Update
+Files: your-app.zip
+Description (optional):
+- New features
 - Bug fixes
 ```
+
+💡 Tip: The bootstrapper always downloads 
+the most recent release!
 
 </td>
 </tr>
 </table>
 
-#### 4️⃣ Configure Bootstrapper
+## ⚙️ Building the Bootstrapper
 
-1. Fork this repository
-2. Update `Config.cs`:
+### Visual Studio 2022 Method (Recommended)
+
+1. Open the solution in Visual Studio 2022
+2. Right-click on the project
+3. Click "Publish"
+4. Create new profile:
+   - Target: Folder
+   - Configuration: Release
+   - Target Framework: net7.0-windows
+   - Deployment Mode: Self-contained
+   - Target Runtime: win-x64
+   - File Format: Single file
+5. Click "Publish"
+
+The standalone .exe will be created in the publish folder!
+
+### Project Configuration
+
+```xml
+<PropertyGroup>
+  <OutputType>WinExe</OutputType>
+  <TargetFramework>net7.0-windows</TargetFramework>
+  <PublishSingleFile>true</PublishSingleFile>
+  <SelfContained>true</SelfContained>
+  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+</PropertyGroup>
+```
+
+## 🔧 Configuration
+
+Update `Config.cs`:
 ```csharp
 public static class Config
 {
@@ -324,29 +178,14 @@ public static class Config
 }
 ```
 
-#### 5️⃣ Build & Distribute
+## 📝 Release Tips
 
-1. Build the bootstrapper
-2. Share the bootstrapper executable
-3. Users will always get the latest version!
+- Keep file names simple (e.g., `app.zip`, `program.rar`)
+- Test your archives before publishing
+- Include clear descriptions of changes
+- Make sure your executable name matches `Config.cs`
 
-### 🔄 Update Process
-
-1. Prepare new version
-2. Create new release on GitHub
-3. Upload new ZIP/RAR
-4. Publish release
-5. Done! Bootstrapper will automatically download the latest version
-
-### 📝 Release Tips
-
-- Use semantic versioning (`v1.0.0`, `v1.0.1`, etc.)
-- Include changelogs in release descriptions
-- Test ZIP/RAR files before publishing
-- Keep old releases for version history
-- Use clear release titles and descriptions
-
-### ⚠️ Common Issues
+## ⚠️ Common Issues
 
 <table>
 <tr>
@@ -370,3 +209,48 @@ public static class Config
 </td>
 </tr>
 </table>
+
+## 💫 Support
+
+<div align="center">
+
+[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/your-username/Universal-Bootstrapper/issues)
+
+</div>
+
+---
+
+## 📝 License
+
+<div align="center">
+
+Released under the [MIT](LICENSE) license
+<br>
+Copyright © 2024 Skyflizz
+
+</div>
+
+## 🌟 Credits
+
+<div align="center">
+
+Created with ❤️ by [Skyflizz]
+<br>
+Inspired by modern Windows designs
+<br>
+Custom icons and animations
+
+</div>
+
+---
+
+<div align="center">
+
+### ⭐ Star this repo if you like it!
+
+<br>
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=your-username%2FUniversal-Bootstrapper&label=VISITORS&countColor=%2337d67a)
+![Stars](https://img.shields.io/github/stars/your-username/Universal-Bootstrapper?style=social)
+
+</div> 
