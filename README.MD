@@ -174,6 +174,18 @@ Universal-Bootstrapper/
 </tr>
 </table>
 
+## 💫 Support
+
+<div align="center">
+
+[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-username)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-server)
+[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/your-username/Universal-Bootstrapper/issues)
+
+</div>
+
+---
+
 ## 📝 License
 
 <div align="center">
@@ -193,16 +205,6 @@ Created with ❤️ by [Your-Name]
 Inspired by modern Windows designs
 <br>
 Custom icons and animations
-
-</div>
-
-## 💫 Support
-
-<div align="center">
-
-[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-username)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-server)
-[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/your-username/Universal-Bootstrapper/issues)
 
 </div>
 
