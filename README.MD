@@ -258,4 +258,8 @@ Custom icons and animations
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=your-username%2FUniversal-Bootstrapper&label=VISITORS&countColor=%2337d67a)
 ![Stars](https://img.shields.io/github/stars/your-username/Universal-Bootstrapper?style=social)
 
+</div>
+
+<div align="right">
+<sub>README.md generated with ❤️ by GPT Claude</sub>
 </div> 
