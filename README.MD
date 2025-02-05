@@ -285,27 +285,25 @@ your-app/
 1. Go to your repository
 2. Click "Releases"
 3. Click "Create a new release"
-4. Add a title (e.g., "Latest Update")
-5. Upload your ZIP/RAR file
-6. Click "Publish release"
-
-That's it! The bootstrapper will automatically download the latest release.
+4. Choose a tag (e.g., `v1.0.0`)
+5. Add release title
+6. Add description
+7. Upload your ZIP/RAR file
+8. Publish release
 
 </td>
 <td>
 
 Example release structure:
 ```plaintext
-Title: Latest Update
-Files: your-app.zip
-Description (optional):
-- New features
+Title: v1.0.0 - Initial Release
+Tag: v1.0.0
+Files: your-app-v1.0.0.zip
+Description:
+- Feature 1
+- Feature 2
 - Bug fixes
 ```
-
-💡 Tip: The bootstrapper always downloads 
-the most recent release, no version 
-numbers needed!
 
 </td>
 </tr>
@@ -332,19 +330,19 @@ public static class Config
 
 ### 🔄 Update Process
 
-1. Prepare your new files
+1. Prepare new version
 2. Create new release on GitHub
 3. Upload new ZIP/RAR
 4. Publish release
-5. Done! Users will automatically get the latest version
+5. Done! Bootstrapper will automatically download the latest version
 
 ### 📝 Release Tips
 
-- Keep file names simple (e.g., `app.zip`, `program.rar`)
-- Test your archives before publishing
-- Include clear descriptions of changes
-- Make sure your executable name matches `Config.cs`
-- Keep old releases for backup purposes
+- Use semantic versioning (`v1.0.0`, `v1.0.1`, etc.)
+- Include changelogs in release descriptions
+- Test ZIP/RAR files before publishing
+- Keep old releases for version history
+- Use clear release titles and descriptions
 
 ### ⚠️ Common Issues
 
@@ -369,4 +367,4 @@ public static class Config
 
 </td>
 </tr>
-</table> 
+</table>
