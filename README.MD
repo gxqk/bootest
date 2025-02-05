@@ -16,8 +16,8 @@
 
 [Getting Started](#-getting-started) •
 [Features](#-features) •
-[Configuration](#%EF%B8%8F-configuration) •
-[Documentation](#-documentation)
+[Building](#%EF%B8%8F-building-the-bootstrapper) •
+[Publishing](#-publishing-your-application)
 
 </div>
 
