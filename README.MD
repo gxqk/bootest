@@ -256,7 +256,7 @@ Custom icons and animations
 <br>
 
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=your-username%2FUniversal-Bootstrapper&label=VISITORS&countColor=%2337d67a)
-![Stars](https://img.shields.io/github/stars/your-username/Universal-Bootstrapper?style=social)
+![Stars](https://img.shields.io/github/stars/gxqk/bootest?style=social)
 
 </div>
 
